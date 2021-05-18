@@ -1,12 +1,11 @@
-@extends('layouts.app')
+@extends('layout')
 
 @section('content')
-<div class="container">
+<div class="container" style="background-image: url('https://melelices.com/wp-content/uploads/2019/04/estudiantes-brillantes-1.png')">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
+            <div class="panel panel-default login-glass">
                 <div class="panel-heading">Login</div>
-
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
