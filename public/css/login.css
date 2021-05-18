@@ -1,5 +1,12 @@
+.wrapper {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-.panel {
+#login.panel {
     margin-bottom: 22px;
     background-color: #bac8f9;
     border: 1px solid transparent;
@@ -8,31 +15,26 @@
     box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
 }
 
-.wave {
-    height: 130px; 
-    overflow: hidden;
-}
-
-.panel-default {
+.login.panel-default {
     border-color: #bac8f9;
 }
 
-.panel-heading {
+.login.panel-heading {
     padding: 10px 15px;
     border-bottom: 1px solid transparent;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
 }
 
-.panel-default>.panel-heading {
+.login.panel-default>.login.panel-heading {
     color: #333;
     background-color: #fff;
     border-color: #d3e0e9;
 }
 
-.panel-body {
+.login.panel-body {
     padding: 2em;
-    background: #bac8f9;
+    background: #d7dbff;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -47,7 +49,6 @@
 .img {
     display: block;
     border-radius: 50px;
-    width: 80%;
-    margin: auto;
+    width: 100%;
     padding: 2em;
 }

@@ -1,13 +1,14 @@
 #headerwrap {
 	background: url(../img/fondo.png) no-repeat center top;
-	margin-top: -70px;
-	padding-top: 250px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	min-height: 85vh;
 	width: 100%;
-
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -49,6 +50,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: #fff;
     text-align: center;
     font-size: small;
     padding: 1em;
@@ -58,8 +60,17 @@
     margin: auto;
 }
 
-@media (max-width: 768px) {
-  #headerwrap {
-    padding-top: 180px;
+@media (max-width: 800px) {
+  #headerwrap h1 {
+    padding: 0;
+    letter-spacing: 4px;
+    font-size: calc(1.375rem + 1.5vw);;
+    font-weight: bold;
   }
+  
+  #headerwrap h4 {
+    font-weight: 400;
+    color:rgb(14, 14, 14);
+  }
+  
 }
