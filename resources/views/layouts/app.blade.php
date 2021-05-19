@@ -11,6 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <link href="{{ asset('css/inicio.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
 </head>
@@ -91,6 +92,10 @@
         </nav>
 
         @yield('content')
+    </div>
+
+    <div class="footer">
+      <p>&copy; Copyrights <strong>{{ config('app.name', '') }}</strong>. All Rights Reserved</p>
     </div>
 
     <!-- Scripts -->
