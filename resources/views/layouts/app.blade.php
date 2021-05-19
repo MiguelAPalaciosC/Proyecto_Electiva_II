@@ -46,6 +46,25 @@
                         @guest
                             <li><a href="{{ route('login') }}">Iniciar Sesión</a></li>
                         @else
+                        <li><a id="menu" href="{{ url('/home') }}">Inicio</a></li>
+                    <li class="dropdown">
+                        <li class="dropdown">
+                            <a id="name" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false"><i class="fas fa-align-justify"></i> Modulos <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                @if((Auth::user()->usertype_id_usertype)==1)
+                                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ action('UserController@index') }}">Usuarios</a></li>
+                                @endif
+                                @if((Auth::user()->usertype_id_usertype)==2)
+                                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="">Asignaturas</a></li>
+                                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="">Actividades</a></li>
+                                @endif
+                                @if((Auth::user()->usertype_id_usertype)==3)
+                                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="">Asignaturas</a></li>
+                                @endif
+                            </ul>
+                        </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>

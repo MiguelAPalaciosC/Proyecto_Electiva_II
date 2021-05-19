@@ -14,7 +14,7 @@ class UserType extends Model
 
 
     protected $fillable =[
-        'name'
+        'name',
     ];
 
     protected $guarded =[
