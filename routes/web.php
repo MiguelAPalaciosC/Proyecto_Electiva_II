@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('usuario','UserController');
 Route::resource('estudiante','EstudianteController');
 Route::get('materia/{nombre}', 'EstudianteController@busquedaMaterias')->name('materia');
+Route::resource('profesor','ProfesorController');
+Route::get('profesorMateria/{nombre}', 'ProfesorController@busquedaMaterias')->name('materia');

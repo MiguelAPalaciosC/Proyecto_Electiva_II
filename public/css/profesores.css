@@ -1,0 +1,164 @@
+#profesores { background: #e0e0e0; margin: 2em; display: flex; }
+
+a { text-decoration: none; }
+
+a:hover { color: #000; }
+
+.sidebar-container .welcome { padding: .875rem 1.25rem; }
+
+.sidebar-container .menu { width: 18rem; }
+
+.sidebar-container .menu .text-color-p:hover { background: #cccccc; }
+
+.bg-primary { background-color: #e0e0e0!important; }
+
+.welcome { text-align: center; color: #3a3a3a; }
+
+.menu { padding: 1em; }
+
+.font-weight-bold { font-weight: bold; }
+
+.text-color-p { color: #3a3a3a; }
+
+.content { padding: 1em 0 0 3em; }
+
+.title-class h1 { font-size: 3.5em; }
+
+.card:hover { transform: scale(1.02); }
+
+.card-body { border-radius: 10px; }
+
+.card-link { cursor: pointer; }
+
+#btn { display: none; }
+
+.text-color-p:hover { color: #262626; }
+
+.create {
+    text-align: center;
+    background: #e0e0e0;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow:  7px 7px 14px #acacac,
+             -7px -7px 14px #ffffff;
+    transition: 0.6s;
+}
+.create:hover { 
+    background: #e0e0e0;
+    box-shadow: inset 7px 7px 14px #acacac,
+            inset -7px -7px 14px #ffffff;
+    transition: 0.6s;
+}
+
+.bienvenida {
+    margin: auto;
+    text-align: center;
+    color: #717171;
+}
+
+.divider {
+    border: 1px solid #3a3a3a; 
+    width: 80%; 
+    margin: 1.5em auto;
+}
+
+.sidebar-container { 
+    height: 90vh;
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow:  11px 11px 22px #969696,  -11px -11px 22px #ffffff;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow:  11px 11px 22px #969696;
+    border: none;
+}
+
+
+.cards {
+    width: 90%;
+    padding-top: 1em;
+    margin: auto;
+}    
+
+.check {
+    z-index: 1000;
+    cursor: pointer;
+    width: 100%;
+    color: #3a3a3a;
+    text-align: left;
+}
+
+#btn:checked~ .sidebar-container {
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.sidebar-container .menu a {
+    margin: 2px;
+    transition: 0.3s;
+}
+
+.sidebar-container a, .sidebar-container #close, #btn:checked~ .sidebar-container #minium-close{
+    margin-top: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+#btn:checked~ .sidebar-container a, #btn:checked~ .sidebar-container span, .sidebar-container #minium-close, #btn:checked~ .sidebar-container #close {
+    margin-top: -50px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+@media (max-width: 800px){
+    .welcome { text-align: left; }
+
+    #estudiantes { display: block; }
+
+    .content { padding-left: 0.5em; }
+
+    .sidebar-container .menu { display: inline; }
+
+    .sidebar-container { 
+        width: 50px;
+        height: 50px;
+        transition: 0.3s;
+    }
+
+    #btn:checked~ .sidebar-container {
+        width: 20%;
+        height: 100%;
+        transition: 0.3s;
+    }
+
+    .check {
+        z-index: 1000;
+        cursor: pointer;
+        width: 100%;
+        color: #3a3a3a;
+        text-align: left;
+    }
+    
+    .sidebar-container .menu a {
+        margin: 2px;
+        transition: 0.3s;
+    }
+    
+    .sidebar-container a, .sidebar-container #close, #btn:checked~ .sidebar-container #minium-close{
+        margin-top: -50px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    #btn:checked~ .sidebar-container a, .sidebar-container #minium-close, #btn:checked~ .sidebar-container #close, #btn:checked~ .sidebar-container span {
+        margin-top: auto;
+        opacity: 1;
+        visibility: visible;
+    }
+}
