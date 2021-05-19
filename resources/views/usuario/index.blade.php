@@ -39,17 +39,17 @@
                                                 <td>{{ $us->usertype_id_usertype }}</td>
                                                 <td>
 
-                                                    {{-- <a href="" data-target="#modal-edit-{{ $us->id }}"
+                                                    <a href="" data-target="#modal-edit-{{ $us->id }}"
                                                         data-toggle="modal"><button class="btn btn-info">Editar</button></a>
 
                                                     <a href="" data-target="#modal-delete-{{ $us->id }}"
                                                         data-toggle="modal"><button
-                                                            class="btn btn-danger">Eliminar</button></a> --}}
+                                                            class="btn btn-danger">Eliminar</button></a>
 
                                                 </td>
                                             </tr>
-                                            {{-- @include('usuario.edit')
-                                            @include('usuario.delete') --}}
+                                            @include('usuario.edit')
+                                            @include('usuario.delete')
                                         @endforeach
                                     </table>
                                 </div>

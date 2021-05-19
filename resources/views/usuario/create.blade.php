@@ -9,11 +9,8 @@
             </div>
             <div class="modal-body">
                 <div class="container-fluid">
-                    <form action="{{action('UserController@store')}}" method="POST">
-                        {{ csrf_field() }}
-                    {{-- {!! Form::open(['url' => 'usuario', 'method' => 'POST', 'autocomplete' => 'off']) !!}
-                    {{ Form::token() }} --}}
-
+                        {!! Form::open(['url' => 'usuario', 'method' => 'POST', 'autocomplete' => 'off']) !!}
+                        {{ Form::token() }}
                     <div class="form-row">
                         <div class="form-group col-sm-4">
                             <div>Nombre:</div>
@@ -55,8 +52,7 @@
                             <button class="btn btn-info" type="submit">Guardar</button>
                         </div>
                     </div>
-                </form>
-                    {{-- {!! Form::close() !!} --}}
+                    {!! Form::close() !!}
                 </div>
             </div>
             <div class="modal-footer">

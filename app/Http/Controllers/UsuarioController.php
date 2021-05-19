@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\UserFormRequest;
+use App\Http\Requests\UsuarioFormRequest;
 use App\User;
 use App\Models\UserType;
 use Illuminate\Http\Request;
@@ -10,7 +10,7 @@ use DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
-class UserController extends Controller
+class UsuarioController extends Controller
 {
     public function __construct()
     {
@@ -38,7 +38,7 @@ class UserController extends Controller
     }
 
     //Método que almacena los datos provenientes del formulario de una vista en una tabla de la bd
-    public function store (UserFormRequest $request){
+    public function store (UsuarioFormRequest $request){
         $usuario=new User;
         $usuario->name=$request->get('nombre');
         $usuario->email=$request->get('correo');
