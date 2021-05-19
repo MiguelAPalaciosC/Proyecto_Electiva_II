@@ -19,3 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('usuario','UserController');
+Route::resource('estudiante','EstudianteController');
+Route::get('materia/{nombre}', 'EstudianteController@busquedaMaterias')->name('materia');
