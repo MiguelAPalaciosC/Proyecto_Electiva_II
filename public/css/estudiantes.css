@@ -1,64 +1,62 @@
 #estudiantes { background: #e0e0e0; margin: 2em; display: flex; }
+
 a { text-decoration: none; }
+
 a:hover { color: #000; }
+
+.sidebar-container .welcome { padding: .875rem 1.25rem; }
+
+.sidebar-container .menu { width: 18rem; }
+
+.sidebar-container .menu .text-color-p:hover { background: #cccccc; }
+
+.bg-primary { background-color: #e0e0e0!important; }
+
+.welcome { text-align: center; color: #3a3a3a; }
+
+.menu { padding: 1em; }
+
+.font-weight-bold { font-weight: bold; }
+
+.text-color-p { color: #3a3a3a; }
+
+.content { padding: 1em 0 0 3em; }
+
+.title-class h1 { font-size: 3.5em; }
+
+.available { background-color: #81c784; }
+
+.close { background-color: #fff176; }
+
+.not-available { background-color: #e57373; }
+
+.card:hover { transform: scale(1.02); }
+
+.card-body { border-radius: 10px; }
+
+.card-link { cursor: pointer; }
+
+#btn { display: none; }
+
+.text-color-p:hover { color: #262626; }
+
+.bienvenida {
+    margin: auto;
+    text-align: center;
+    color: #717171;
+}
+
+.divider {
+    border: 1px solid #3a3a3a; 
+    width: 80%; 
+    margin: 1.5em auto;
+}
+
 .sidebar-container { 
     height: 90vh;
     border-radius: 15px;
     background: #e0e0e0;
     box-shadow:  11px 11px 22px #969696,  -11px -11px 22px #ffffff;
-}
-
-.sidebar-container .welcome {
-    padding: .875rem 1.25rem;
-
-}
-
-.sidebar-container .menu {
-    width: 18rem;
-
-}
-.bg-primary {
-    background-color: #e0e0e0!important;
-}
-
-.welcome {
-    text-align: center; color: #3a3a3a;
-}
-
-.menu {
-    padding: 1em;
-}
-
-.font-weight-bold {
-    font-weight: bold;
-}
-
-.text-color-p {
-    color: #3a3a3a;
-}
-
-.content {
-    padding: 1em 0 0 3em;
-}
-
-.title-class h1 {
-    font-size: 3.5em;
-}
-
-.divider {
-    border: 1px solid #3a3a3a; width: 80%; margin: 1.5em auto;
-}
-
-.available {
-    background-color: #81c784;
-}
-
-.close {
-    background-color: #fff176;
-}
-
-.not-available {
-    background-color: #e57373;
 }
 
 .card {
@@ -67,21 +65,12 @@ a:hover { color: #000; }
     border: none;
 }
 
-.card:hover {
-    transform: scale(1.02);
-}
 
 .cards {
     width: 90%;
     padding-top: 1em;
     margin: auto;
-}
-
-.card-body { border-radius: 10px; }
-
-#btn {
-    display: none;
-}  
+}    
 
 .check {
     z-index: 1000;

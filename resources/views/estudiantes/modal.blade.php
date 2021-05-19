@@ -7,9 +7,10 @@
       </div>
       <div class="modal-body">
         @foreach ($tareas as $t)
-            @if ($tarea['nombre'] == $t['nombre'])
-                <p>{{ $t['descripcion'] }}</p>
-            @endif
+          @if ($tarea['nombre'] == $t['nombre'])
+            <p>{{ $t['descripcion'] }}</p>
+            <strong>Fecha de entrega: {{ $t['fecha'] }}</strong>
+          @endif
         @endforeach
       </div>
       <div class="modal-footer">
@@ -28,9 +29,11 @@
       </div>
       <div class="modal-body">
         @foreach ($tareas as $t)
-            @if ($tarea['nombre'] == $t['nombre'])
-                <p>{{ $t['descripcion'] }}</p>
-            @endif
+          @if ($tarea['nombre'] == $t['nombre'])
+            <h3>{{ $t['nombre'] }}</h3>
+            <p>{{ $t['descripcion'] }}</p>
+            <strong>Calificación: {{ $t['nota'] }}</strong>
+          @endif
         @endforeach
       </div>
       <div class="modal-footer">

@@ -19,7 +19,7 @@ class EstudianteController extends Controller
     public function index(Request $request)
     {        
         $materias = array("Calculo", "Fisica", "Programacion", "Estadistica");
-        return view('estudiantes.index', ["materias" => $materias]);
+        return view('estudiantes.index', ["materias" => $materias, "clear" => true]);
     }
 
     public function busquedaMaterias($nombre) {

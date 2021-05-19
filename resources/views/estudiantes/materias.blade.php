@@ -16,7 +16,7 @@
     </div>
     <div class="row cards">
         @foreach ($tareas as $tarea)
-        <div class="col-sm-12 col-lg-4">
+        <div class="col-sm-12 col-lg-4 mb-3">
             <div class="card">
                 <div class="card-body available">
                     <h5 class="card-title">{{ $tarea['nombre'] }}</h5>
