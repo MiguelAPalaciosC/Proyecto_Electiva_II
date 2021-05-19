@@ -7,6 +7,7 @@ use App\User;
 use App\Models\UserType;
 use Illuminate\Http\Request;
 use DB;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
@@ -19,6 +20,7 @@ class UserController extends Controller
     public function index(Request $request)
     {
         if ($request) {
+            if(Auth::user()->usertype_id_usertype == 1){
             $usuario=DB::table('users as us')
             ->join('usertype as ut','us.usertype_id_usertype','=','ut.id_usertype')
             ->select('us.id','us.name','us.email','us.password','ut.name as usertype_id_usertype')
@@ -28,6 +30,10 @@ class UserController extends Controller
             $usertype=DB::table('usertype')->get();
             
             return view('usuario.index',["usuario"=>$usuario, "usertype"=>$usertype]);
+            }
+            else{
+                return Redirect::to('home')->with('info','El usuario no tiene los permisos necesarios para ingresar al modulo');
+            }
         }
     }
 
